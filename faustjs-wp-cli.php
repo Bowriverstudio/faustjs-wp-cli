@@ -36,7 +36,7 @@ namespace {
  			 * @param Array $assoc_args Key value arguments stored in associated array format.
 			 * ## EXAMPLES
 			 *
-			 *  $ wp faustjs update_setting --setting="front_end" --value="http://localhost:3000"
+			 *  $ wp faustjs update_setting --setting="frontend_uri" --value="http://localhost:3000"
 			 *
 			 * @subcommand update_setting
 			 *

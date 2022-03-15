@@ -1,76 +1,34 @@
-===  WP GraphQL Clarity Addon ===
+===  WP CLI for FaustJS ===
 Contributors: Maurice Tadros
 Tags: FaustJS WP CLI
 Requires at least: 5.9.2
 Tested up to: 5.9
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-* Plugin Name: WP CLI for FaustJS
- * Plugin URI: https://github.com/Bowriverstudio/faustjs-wp-cli
- * GitHub Plugin URI: https://github.com/Bowriverstudio/faustjs-wp-cli
- * Description: Adds developer support for Faustjs via WP CLI
- * Author: Maurice Tadros
- * Author URI: http://www.bowriverstudio.com
- * Version: 1.0.1
- * Text Domain: faustjs-wp-cli
- * Domain Path: /languages/
- * Requires PHP: 7.1
- * License: GPL-3
- * License URI: https://www.gnu.org/licenses/gpl-3.0.html
-
-
 /**
- * Plugin Name: WP GraphQL Clarity
- * Plugin URI: https://github.com/Bowriverstudio/wp-graphql-clarity
- * GitHub Plugin URI: https://github.com/Bowriverstudio/wp-graphql-clarity
- * Description: GraphQL API for Microsoft Clarity
- * Author: Maurice Tadros
- * Author URI: http://www.bowriverstudio.com
- * Version: 1.0.0
- * Text Domain: wp-graphql-clarity
- * Domain Path: /languages/
- * Requires PHP: 7.1
- * License: GPL-3
- * License URI: https://www.gnu.org/licenses/gpl-3.0.html
- *
+  * Plugin URI: https://github.com/Bowriverstudio/faustjs-wp-cli
+  * GitHub Plugin URI: https://github.com/Bowriverstudio/faustjs-wp-cli
+  */
+
+This Plugin 
 
 
-This plugin enables Yoast SEO Support for WPGraphQL.
+# List all the FaustJS settings.
+wp faustjs settings
 
-== Description ==
++------------------+----------------------------------------+
+| name             | value                                  |
++------------------+----------------------------------------+
+| frontend_uri     | http://localhost:3000                  |
+| secret_key       | xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx     |
+| menu_locations   | Primary, Footer,                       |
+| disable_theme    | 1                                      |
+| enable_rewrites  | 1                                      |
+| enable_redirects | 1                                      |
++------------------+----------------------------------------+
 
-This plugin enables Yoast SEO Support for WPGraphQL
-
-This is an extension to the WPGraphQL plugin (https://github.com/wp-graphql/wp-graphql) that returns Yoast SEO data.
-
-**Currently returning SEO data for:**
-
-- Pages
-- Posts
-- Custom post types
-- Products (WooCommerce)
-- Categories
-- Custom taxonomies
-- WooCommerce Products
-- Yoast Configuration
-  - Webmaster verification
-  - Social profiles
-  - Schemas
-  - Breadcrumbs
-
-  > Please Note: Yoast and WPGraphQL and their logos are copyright to their respective owners.
-
-== Installation ==
-
-1. Install & activate [WPGraphQL](https://www.wpgraphql.com/)
-2. Install & activate [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/)
-2. Upload plugin to the `/wp-content/plugins/` directory
-
-
- [See GitHub Repo for example queries](https://github.com/ashhitch/wp-graphql-yoast-seo)
-
-== Upgrade Notice ==
-Please note version 14 of the Yoast Plugin is a major update so is now required to run this plugin
+# Updates a specific setting.
+wp faustjs update_setting --setting="frontend_uri" --value="http://localhost:3000"
